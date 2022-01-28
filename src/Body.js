@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-let Home = () => {
+let Body = () => {
   const [blogs, setBlogs] = useState([
       {title: 'New blog', body: 'Lorem ipsum...', author: 'Ian', id: 1},
       {title: 'Some tips', body: 'Lorem ipsum...', author: 'Jan', id: 2},
@@ -19,4 +19,4 @@ let Home = () => {
   );
 };
 
-export default Home;
+export default Body;
