@@ -24,6 +24,12 @@
   margin-left: auto;
 }
 
+.navbar .newPost {
+  color: white;
+  background-color: #f1356d;
+  border-Radius: 15px;
+}
+
 .navbar a {
   margin-left: 16px;
   text-decoration: none;
@@ -67,10 +73,14 @@
 
 
 .delete-blog-button {
-  float: right; 
+  float: right;
   background-color: #9A1E41;
   border: none;
   color: white;
   padding: 15px;
   border-radius: 15px;
+}
+
+.blog-preview a {
+  text-decoration: none;
 }

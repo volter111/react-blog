@@ -8,7 +8,9 @@ const useFetch = (url) => {
   useEffect(() => {
     // http://localhost:8000/blogs
     // npx json-server --watch data/db.json --port 8000
-    fetch(url)
+    const abortCont = new AbortController();
+
+    fetch(url, { signal: abortCont.signal })
       .then((res) => {
         if (!res.ok) {
           throw Error("Could not fetch the data for this resource");
@@ -16,14 +18,20 @@ const useFetch = (url) => {
         return res.json();
       })
       .then((data) => {
+        console.log(data); // log data obj to console body, id, title, userId
         setData(data);
         setIsPending(false);
         setError(null);
       })
       .catch((err) => {
-        setError(err.message);
-        setIsPending(false);
+        if (err.name === "AbortError") {
+          console.log("fetch aborted");
+        } else {
+          setError(err.message);
+          setIsPending(false);
+        }
       });
+    return () => abortCont.abort();
   }, [url]);
   return { data, isPending, error };
 };

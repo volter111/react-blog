@@ -1,8 +1,9 @@
 import BlogList from "./BlogList";
 import useFetch from "./useFetch";
 
-const Body = () => {
-  const { data: blogs, isPending, error } = useFetch("http://localhost:8000/blogs");
+const Home = () => {
+  // http://localhost:8000/blogs local data
+  const { data: blogs, isPending, error } = useFetch("https://jsonplaceholder.typicode.com/posts/");
 
   return (
     <div className="homepage">
@@ -13,4 +14,4 @@ const Body = () => {
   );
 };
 
-export default Body;
+export default Home;
