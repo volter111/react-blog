@@ -4,11 +4,10 @@ function Navbar() {
 
     return(
         <nav className="navbar">
-        <h1>My blog</h1>
+        <Link to='/'><h1>My blog</h1></Link>
             <div className="links">
-                <Link to="/">Home</Link>
                 <Link to="/create" className="newPost">New post</Link>
-                <Link to="/">About</Link>
+                <Link to="about">About</Link>
             </div>
         </nav>
     )

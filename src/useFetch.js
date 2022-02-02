@@ -7,8 +7,6 @@ const useFetch = (url) => {
 
   useEffect(() => {
     // http://localhost:8000/blogs
-    // npx json-server --watch data/db.json --port 8000
-    // body, id, title, userId
     const abortCont = new AbortController();
 
     fetch(url, { signal: abortCont.signal })
