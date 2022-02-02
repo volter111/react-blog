@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+// show all posts on home page
+
 const BlogList = ({ blogs, title }) => {
   const titleShortener = (t) => {
     if (t.length > 30) {

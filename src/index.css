@@ -84,3 +84,22 @@
 .blog-preview a {
   text-decoration: none;
 }
+
+.blog-details p {
+  margin-top: 20px;
+}
+
+.blog-details div {
+  margin: 20px;
+}
+
+.blog-details h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 10px;
+}
+
+.blog-details h5 {
+  text-align: right;
+  margin-top: 30px;
+}
