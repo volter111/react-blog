@@ -2,8 +2,9 @@ import BlogList from "./BlogList";
 import useFetch from "./useFetch";
 
 const Home = () => {
-  // http://localhost:8000/blogs local data
-  const { data: blogs, isPending, error } = useFetch("https://jsonplaceholder.typicode.com/posts/");
+  const { data: blogs, isPending, error } = useFetch("http://localhost:8000/blogs");
+
+  console.log(blogs)
 
   return (
     <div className="homepage">

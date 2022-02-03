@@ -20,7 +20,7 @@ const BlogList = ({ blogs, title }) => {
           <Link to={`/blogs/${blog.id}`}>
             <h2 className="blog-title">{titleShortener(blog.title)}</h2>
           </Link>
-          <p className="blog-name">Written by user id: {blog.userId}</p>
+          <p className="blog-name">Written by author: {blog.author}</p>
         </div>
       ))}
     </div>

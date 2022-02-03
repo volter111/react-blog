@@ -9,23 +9,19 @@
 
 
 .navbar {
-
-
   padding: 20px;
   display: flex;
   align-items: center;
   width: 600px;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
-
 }
 
-.content {
 
+.content {
   width: 600px;
   margin: 40px auto;
   padding: 20px;
-
 }
 
 .navbar h1 {
@@ -46,17 +42,17 @@
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
+  color: #000;
 }
 
 .navbar a:hover {
-  color: #f1356d;
+  color: #000000;
 }
 
 
 
 /* blog previews / list */
 .blog-list h2 {
-
   text-align: center;
 }
 
@@ -66,12 +62,15 @@
   align-items: center;
   padding: 10px 16px;
   margin: 20px 0;
-  border-bottom: 1px solid #fafafa;
+  border-bottom: 1px solid #fafafa;  
 }
 
 .blog-preview:hover {
   box-shadow: 1px 3px 5px rgba(12, 12, 12, 0.1);
+  background-color: rgb(248, 247, 247);
+  border-radius: 50px;
 }
+
 
 .blog-preview h2 {
   font-size: 20px;
@@ -79,6 +78,9 @@
   margin-bottom: 8px;
 }
 
+.blog-title .blog-name {
+  text-decoration: none;
+}
 
 .delete-blog-button {
   float: right;
@@ -118,16 +120,21 @@
   margin: 0 auto;
   text-align: center;
 }
+
 .create label {
   text-align: left;
   display: block;
 }
-.create h2 {
-  font-size: 20px;
+
+.create h1 {
+  font-size: 30px;
   color: #f1356d;
   margin-bottom: 30px;
 }
-.create input, .create textarea, .create select {
+
+.create input,
+.create textarea,
+.create select {
   width: 100%;
   padding: 6px 10px;
   margin: 10px 0;
@@ -135,8 +142,9 @@
   box-sizing: border-box;
   display: block;
   resize: vertical;
-  
+
 }
+
 .create button {
   background: #f1356d;
   color: #fff;
@@ -144,4 +152,63 @@
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.deleteBlogButton {
+  transition-duration: 0.4s;
+  border-radius: 50px;
+  width: 200px;
+  height: 50px;
+  margin-left: auto;
+  margin-top: 20px;
+  background-color: #f1356d;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  border: 0;
+  text-align: center;
+}
+
+.deleteButton {
+  text-align: center;
+}
+
+.deleteBlogButton:hover {
+  background-color: rgb(219, 0, 0);
+  color: white;
+}
+
+.notFoundPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 550px;
+  align-items: center;
+}
+
+.notFoundPage h2 {
+  font-size: 50px;
+}
+
+.homePageButton {
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  border: 0;
+  background-color: rgb(174, 231, 202);
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.homePageButton:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.homePageButton a {
+  text-decoration: none;
+}
+
+.notFoundPhoto {
+  opacity: 0.1;
+  height: 350px;
 }
