@@ -17,7 +17,8 @@
 
 ### Start local JSON server command: ```npx json-server --watch data/db.json --port 8000```
     
-    Open http://localhost:3000 to view it in the browser.
+    App
+    http://localhost:3000 to view it in the browser.
 
     Resources
     http://localhost:8000/blogs
